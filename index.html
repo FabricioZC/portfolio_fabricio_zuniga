@@ -179,7 +179,7 @@
             <i class="ri-arrow-up-s-fill"></i>
         </a>
     </div>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var form = document.querySelector('.contact-form form');
@@ -195,6 +195,27 @@
             });
         });
     </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.querySelector('.contact-form form');
+    
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+    
+                // Obtener los valores de los campos ocultos
+                var nextValue = form.querySelector('[name="_next"]').value;
+                var captchaValue = form.querySelector('[name="_captcha"]').value;
+    
+                // Verificar los valores y realizar acciones específicas
+                if (nextValue === "https://fabriciozunigadev.netlify.app" && captchaValue === "false") {
+                    // Aquí puedes mostrar el mensaje de alerta
+                    alert('¡Mensaje enviado con éxito!');
+                }  
+            });
+        });
+    </script>
+    
     
   
 </body>
