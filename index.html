@@ -180,15 +180,23 @@
         </a>
     </div>
 
-
-    <script src="./js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            offset: 300,
-            duration: 1400,
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.querySelector('.contact-form form');
+    
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+    
+                // Aquí puedes mostrar el mensaje de alerta
+                alert('¡Mensaje enviado con éxito!');
+    
+                // Luego, puedes enviar el formulario si es necesario
+                // form.submit();
+            });
         });
     </script>
+
+  
 </body>
 
 </html>
