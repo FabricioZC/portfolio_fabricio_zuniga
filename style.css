@@ -107,6 +107,8 @@ section {
   justify-content: flex-start;
 }
 
+
+
 .main-content h4 {
   font-size: 1.6rem;
 }
@@ -491,6 +493,9 @@ form .send-btn:hover {
   }
   form .send-btn {
     width: 100%;
+  }
+  .main-content{
+    margin-top: 3rem;;
   }
   
 }
