@@ -495,7 +495,11 @@ form .send-btn:hover {
     width: 100%;
   }
   .main-content{
+<<<<<<< HEAD
     margin-top: 3rem;;
+=======
+    margin-top: 4rem;;
+>>>>>>> 922427905c251b09555546aac23a8b409069ac62
   }
   
 }
