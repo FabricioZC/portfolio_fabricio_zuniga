@@ -107,6 +107,11 @@ section {
   justify-content: flex-start;
 }
 
+.tech-group{
+  color: var(--other-color);
+  margin-bottom: 15px;
+}
+
 
 
 .main-content h4 {
